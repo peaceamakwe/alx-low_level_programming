@@ -8,14 +8,20 @@ int main(void)
 {
 	int n;
 
-	for (n = 51; n < 68; n++)
+	for (n = 1; n < 8; n++)
 	{
 		putchar(n);
-		if (n != 67)
+		if (n == 7)
+		{
+			break;
+		}
+		else
 		{
 			putchar(',');
 			putchar(' ');
 		}
+
+	}
 	putchar('\n');
 	return (0);
 }
