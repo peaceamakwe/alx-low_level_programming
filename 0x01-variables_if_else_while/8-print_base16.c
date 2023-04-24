@@ -7,12 +7,16 @@
 int main(void)
 {
 	int digit;
-	char Base16Values[] = "0123456789abcdef";
+	char bv;
 
 	for (digit = 0; digit >= 16; digit++)
-	{
-		putchar(Base16Values[digit]);
-	}
+		putchar((digit % 16) + '0');
+
+
+	for (bv = 'a'; bv <= 'f'; bv++)
+		putchar(bv);
+
 	putchar('\n');
+
 	return (0);
 }
