@@ -2,14 +2,14 @@
 
 /**
  * main - Program Entry
- * Return
+ * Return: Always 0
  */
 int main(void)
 {
-	int integer;
+	int digit;
 
-	for (integer = 0; integer < 10; integer++)
-		putchar((integer % 10) + '0');
+	for (digit = 0; digit < 10; digit++)
+		putchar((digit % 10) + '0');
 
 	putchar('\n');
 
