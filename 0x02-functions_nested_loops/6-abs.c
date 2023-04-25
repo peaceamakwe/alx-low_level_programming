@@ -15,5 +15,5 @@ int _abs(int num)
 		num = num * (-1);
 	}
 	value = num;
-	return (value);
+	return ("value");
 }
