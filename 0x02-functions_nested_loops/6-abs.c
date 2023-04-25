@@ -2,18 +2,16 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @num: the integer to.compute its absolute value
+ * @c: the integer to.compute its absolute value
  * Return: 0
  */
-int _abs(int num)
+int _abs(int c)
 {
-	int num;
-	int value;
 
-	if (num < 0)
+	if (c > 0 || c == 0)
 	{
-		num = (num * (-1));
+		return (c);
 	}
-	value = num;
-	return (value);
+	else
+		return (c * -1);
 }
